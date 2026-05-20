@@ -1,6 +1,6 @@
 from flask import Flask
 from app.config.settings import Config
-from app.extensions import db, migrate
+from app.extensions import db
 
 def create_app(config_class=Config):
     """Flask application factory."""
@@ -9,7 +9,6 @@ def create_app(config_class=Config):
     
     # Initialize extensions
     db.init_app(app)
-    migrate.init_app(app, db)
     
     # Register error handlers
     from app.utils.error_handlers import register_error_handlers

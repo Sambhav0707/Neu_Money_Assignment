@@ -11,7 +11,6 @@ This application leverages modern Python and robust Flask extensions to ensure a
 - **Framework**: Flask (Core web framework, using Blueprints and Application Factory)
 - **Database**: PostgreSQL (Relational database for persistent storage)
 - **ORM**: SQLAlchemy (via `Flask-SQLAlchemy`) - Simplifies database interactions using Python objects instead of raw SQL queries.
-- **Migrations**: Alembic (via `Flask-Migrate`) - Handles database schema changes and version control for the database.
 - **Validation**: Pydantic - Used for strict data validation and serialization.
 - **Driver**: `psycopg2-binary` - PostgreSQL database adapter for Python.
 - **Environment Management**: `python-dotenv` - Loads environment variables from `.env` files.
@@ -242,15 +241,9 @@ cp .env.example .env
 Ensure your `DATABASE_URL` in `.env` points to a valid PostgreSQL database. Example:
 `DATABASE_URL=postgresql://postgres:password@localhost:5432/employee_db`
 
-### 4. Database Migrations
+### 4. Database Initialization
 
-Initialize the database schema:
-
-```bash
-flask db init
-flask db migrate -m "Initial migration"
-flask db upgrade
-```
+The database tables are automatically created when you start the application.
 
 ### 5. Running the Application
 
