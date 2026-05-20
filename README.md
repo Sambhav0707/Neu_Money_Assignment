@@ -32,14 +32,12 @@ neu-money-assignment/
 │   ├── config/         # Application configuration and environment loading
 │   ├── controllers/    # HTTP layer: API Routes, request parsing, and response formatting
 │   ├── exceptions/     # Custom domain and application-specific error classes
-│   ├── middleware/     # Request/Response interceptors and global error handlers
 │   ├── models/         # SQLAlchemy ORM database models (Tables)
 │   ├── repositories/   # Database access layer (queries, transactions)
 │   ├── schemas/        # Pydantic validation schemas (Anti-corruption layer)
 │   ├── services/       # Core business logic and rules orchestration
 │   ├── utils/          # Helper functions and shared utilities
-│   ├── extensions.py   # Flask extension initializations
-│   └── routes.py       # Centralized blueprint/route registration
+│   └── extensions.py   # Flask extension initializations
 ├── tests/              # Unit and integration tests (pytest)
 ├── pyproject.toml      # Project dependencies and configuration (uv)
 ├── .env.example        # Environment variable template
