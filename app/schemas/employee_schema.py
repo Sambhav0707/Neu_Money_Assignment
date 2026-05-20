@@ -1,3 +1,10 @@
+"""
+This file defines Pydantic Schemas used as an Anti-Corruption Layer.
+These schemas strictly validate incoming request payloads and format outgoing 
+responses. They ensure that no malformed data ever reaches the Service layer 
+or the database.
+"""
+
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
 from datetime import datetime

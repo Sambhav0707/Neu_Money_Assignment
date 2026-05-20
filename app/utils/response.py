@@ -1,3 +1,9 @@
+"""
+This file provides utility functions for standardizing API responses.
+It ensures that every endpoint returns data in the exact same JSON format 
+(e.g., {"success": true, "message": "...", "data": ...}).
+"""
+
 from flask import jsonify
 
 def success_response(data=None, message="Success", status_code=200):

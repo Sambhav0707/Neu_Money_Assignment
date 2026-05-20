@@ -1,3 +1,13 @@
+"""
+This is the Business Logic Layer (Service).
+This is the heart of the application. It orchestrates the validation of data, 
+enforces business rules (like checking if an email is already taken), and calls 
+the Repository layer to save or fetch data. 
+
+This layer is completely decoupled from Flask, HTTP requests, and raw database queries, 
+making it incredibly easy to test in isolation.
+"""
+
 from typing import List
 from pydantic import ValidationError
 

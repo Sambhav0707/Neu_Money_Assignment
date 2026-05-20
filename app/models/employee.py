@@ -1,3 +1,9 @@
+"""
+This file defines the Database Models (SQLAlchemy). 
+These models are pure data representations that map directly to database tables. 
+They do NOT contain any business logic or HTTP-related code.
+"""
+
 from datetime import datetime, timezone
 from app.extensions import db
 

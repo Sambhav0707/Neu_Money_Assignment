@@ -1,3 +1,11 @@
+"""
+This file defines custom, domain-specific exceptions for the application.
+By using these custom exceptions, the Service layer can signal specific errors 
+(like a DuplicateEmailError) without needing to know how the error will be 
+presented to the user. The Global Error Handler later catches these exceptions 
+and converts them into standard HTTP error responses.
+"""
+
 class AppException(Exception):
     """Base class for all custom application exceptions."""
     def __init__(self, message: str):

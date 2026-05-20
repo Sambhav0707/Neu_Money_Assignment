@@ -43,7 +43,7 @@ neu-money-assignment/
 ├── tests/              # Unit and integration tests (pytest)
 ├── pyproject.toml      # Project dependencies and configuration (uv)
 ├── .env.example        # Environment variable template
-└── run.py              # Application entry point
+└── main.py             # Application entry point
 ```
 
 ---
@@ -250,7 +250,7 @@ The database tables are automatically created when you start the application.
 Start the Flask development server:
 
 ```bash
-python run.py
+python main.py
 ```
 The API will be available at `http://127.0.0.1:5000`.
 

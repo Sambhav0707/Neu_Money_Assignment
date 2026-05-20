@@ -1,3 +1,10 @@
+"""
+This is the Data Access Layer (Repository).
+Its ONLY responsibility is to interact with the database using SQLAlchemy.
+It abstracts away all raw database queries so that the Service layer doesn't 
+have to know how data is saved or retrieved. It contains NO business logic.
+"""
+
 from typing import List, Optional
 from app.extensions import db
 from app.models.employee import Employee

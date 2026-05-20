@@ -1,3 +1,10 @@
+"""
+This file contains Global Error Handlers.
+It intercepts custom exceptions thrown by the Service layer (like NotFoundError) 
+and translates them into standardized, predictable HTTP JSON responses.
+This prevents the application from crashing and hides internal stack traces from users.
+"""
+
 from flask import Flask
 from app.exceptions.custom_exceptions import (
     NotFoundError,

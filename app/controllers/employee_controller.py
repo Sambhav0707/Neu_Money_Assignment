@@ -1,3 +1,12 @@
+"""
+This is the HTTP Layer (Controller). 
+Its ONLY responsibility is to define API routes (endpoints), parse incoming HTTP 
+requests (JSON data, path parameters), pass that data to the Service layer, 
+and format the Service layer's result into a standardized JSON HTTP response. 
+
+This layer contains absolutely ZERO business logic or database interactions.
+"""
+
 from flask import Blueprint, request
 from app.services.employee_service import EmployeeService
 from app.schemas.employee_schema import EmployeeResponseSchema

@@ -1,3 +1,9 @@
+"""
+This file handles the application's configuration. It loads environment variables 
+from the .env file and sets up configuration classes (like 'Config') that are 
+used to configure the Flask application and its extensions (like the database URI).
+"""
+
 import os
 from dotenv import load_dotenv
 
